@@ -41,9 +41,5 @@ namespace CashBox.Repository.Dtos.UserDtos
 
         [Required]
         public string Email { get; set; } = null!;
-
-        [Required]
-        [StringLength(14)]
-        public string Inn { get; set; } = null!;
     }
 }

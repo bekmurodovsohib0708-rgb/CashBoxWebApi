@@ -1,4 +1,4 @@
-using CashBox.Service;
+using CashBox.Service.Configurations;
 using CashBox.Service.Integrations.UzasboServices;
 using CashBox.Service.Integrations.WeatherServices;
 using CashBox.Service.Services;
@@ -127,14 +127,11 @@ builder.ConfigureServiceApplication();
 
 var app = builder.Build();
 
-
-
 app.UseCors("AllowLocalhostFrontend");
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseSwagger();
 app.UseSwaggerUI();
-
 
 app.MapControllers();
 

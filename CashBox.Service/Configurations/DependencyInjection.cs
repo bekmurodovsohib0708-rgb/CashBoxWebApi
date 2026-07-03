@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
 
-namespace CashBox.Service
+namespace CashBox.Service.Configurations
 {
     public static class DependencyInjection
     {

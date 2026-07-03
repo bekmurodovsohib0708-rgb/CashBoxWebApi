@@ -27,7 +27,7 @@ namespace RepositoryLayer.Entity
         public int RegionId { get; set; }
 
         [Column("DISTRICT_ID")]
-        public int? DistrictId { get; set; }
+        public int DistrictId { get; set; }
 
         [Column("CREATE_USER_ID")]
         public int? CreateUserId { get; set; }

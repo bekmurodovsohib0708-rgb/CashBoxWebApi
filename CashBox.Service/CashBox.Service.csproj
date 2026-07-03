@@ -31,4 +31,8 @@
     <ProjectReference Include="..\CashBox.Repository\CashBox.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="MiatR pattern\Users\Queries\" />
+  </ItemGroup>
+
 </Project>
