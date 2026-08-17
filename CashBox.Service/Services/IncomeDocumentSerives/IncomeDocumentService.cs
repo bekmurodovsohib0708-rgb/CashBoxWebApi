@@ -20,12 +20,12 @@ namespace CashBox.Service.Services.IncomeDocumentServices
         public async Task<List<IncomeDocumentListDto>> GetListAsync(IncomeDocumentFilterDto filter)
         {
             var result = await _context.IncomeDocuments
-                .Where(x => x.StatusId != StatusIdConst.DELETE )
+                .Where(x => x.StatusId != StatusIdConst.DELETE)
                 .Select(u => new IncomeDocumentListDto
                 {
                     Id = u.Id,
                     SupplierId = u.SupplierId,
-                    SupplierName = u.Supplier.Code, 
+                    SupplierName = u.Supplier.Code,
                     DocSum = u.DocSum,
                     DocOn = u.DocOn,
                     StatusName = u.Status.ShortName,
